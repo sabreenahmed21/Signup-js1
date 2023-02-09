@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a77dc4a317.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Sign Up</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Signup Form</h1>
+    <div class="progress">
+      <div class="step">
+        <p>Name</p>
+        <div class="bullet">
+          <span>1</span>
+        </div>
+        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+      </div>
+      <div class="step">
+        <p>Contact</p>
+        <div class="bullet">
+          <span>2</span>
+        </div>
+        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+      </div>
+      <div class="step">
+        <p>Birth</p>
+        <div class="bullet">
+          <span>3</span>
+        </div>
+        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+      </div>
+      <div class="step">
+        <p>Submit</p>
+        <div class="bullet">
+          <span>4</span>
+        </div>
+        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+      </div>
+    </div>
+    <div class="form-outer">
+      <form action="#" id="form">
+        <div class="page slid-page">
+          <h2 class="title">Basic Info:</h2>
+          <div class="field  f-name-field">
+            <div class="label">First Name</div>
+            <br>
+            <input type="text" name="f-name" class="f-name" >
+            <span class="error">
+              <i><i class="fa-solid fa-circle-exclamation icon-error"></i></i>
+              <p class="eror-text">please enter a valid Name</p>
+            </span>
+          </div>
+          <div class="field  l-name-field" >
+            <div class="label">Last Name</div>
+            <br>
+            <input type="text" name="l-name" class="l-name" >
+            <span class="error">
+              <i><i class="fa-solid fa-circle-exclamation icon-error"></i></i>
+              <p class="eror-text">please enter a valid Name</p>
+            </span>
+          </div>
+          <div class="field">
+            <button class="nxt-1">NEXT</button>
+          </div>
+        </div>
+        <div class="page">
+          <h2 class="title">Contact Info:</h2>
+          <div class="field  email-field">
+            <div class="label">Email Address:</div>
+            <br>
+            <input type="email" name="email" class="email" >
+            <span class="error">
+              <i><i class="fa-solid fa-circle-exclamation icon-error"></i></i>
+              <p class="eror-text">please enter a valid email</p>
+            </span>
+          </div>
+          <div class="field">
+            <div class="label">Phone Number</div>
+            <br>
+            <input type="tel" name="Phone" class="phone">
+          </div>
+          <div class="field-btns">
+            <button class="prev-2">Prev</button>
+            <button class="nxt-2"  type="button">NEXT</button>
+          </div>
+        </div>
+        <div class="page">
+          <h2 class="title">Date of Birth:</h2>
+          <div class="field date-field">
+            <div class="label">Date</div>
+            <br>
+            <input type="text" name="date" class="date" placeholder="01/01/2000">
+            <span class="error">
+              <i><i class="fa-solid fa-circle-exclamation icon-error"></i></i>
+              <p class="eror-text">Invalid date of birth (dd/mm/yyyy)</p>
+            </span>
+          </div>
+          <div class="field gender-field">
+            <div class="label">Gender</div>
+            <br>
+            <input type="radio" name="gender" value="female" class="female-input" id="radio">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="male" class="male-input" id="radio">
+            <label for="male">Male</label>
+            <span class="error">
+              <i><i class="fa-solid fa-circle-exclamation icon-error"></i></i>
+              <p class="eror-text">You must select Male or Female</p>
+            </span>
+          </div>
+          <div class="field-btns">
+            <button class="prev-3" type="button">Prev</button>
+            <button class="nxt-3">NEXT</button>
+          </div>
+        </div>
+        <div class="page">
+          <h2 class="title">Login Details:</h2>
+          <div class="field  user-field ">
+            <div class="label">Username:</div>
+            <br>
+            <input type="text" name="Username" class="user" >
+            <span class="error">
+              <i><i class="fa-solid fa-circle-exclamation icon-error"></i></i>
+              <p class="eror-text">You must select Male or Female</p>
+            </span>
+          </div>
+          <div class="field create-password">
+            <div class="label">Password</div>
+            <br>
+            <input type="password" name="Password"  placeholder="create password" class="password" >
+            <span class="error">
+              <i><i class="fa-solid fa-circle-exclamation icon-error"></i></i>
+              <p class="eror-text">please enter at least 6 charachter</p>
+          </span>
+          </div>
+          <div class="field-btns">
+            <button class="prev-4">Prev</button>
+            <button class="submit" value="submit">submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <p class="copy">
+      Copyright &copy;2023 All rights reserved | This template is made with ❤ by <a href="https://github.com/sabreenahmed21" target="_blank">Sabreen Ahmed</a>
+    </p>
+  </div>
+
+
+
+  <script src="main.js"></script>
+</body>
+</html>

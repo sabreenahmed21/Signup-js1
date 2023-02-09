@@ -1,0 +1,220 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(#4FBB81,#1F5D6B);
+}
+.container{
+  width: 360px;
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 15px 30px;
+  border-radius: 5px;
+}
+.container h1{
+  margin-bottom: 30px;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left  0.3s ease-in-out;
+}
+.form-outer .page .title{
+  text-align: left;
+}
+.form-outer .page .field{
+  margin:15px 0 40px;
+  position: relative;
+}
+.form-outer .page .field .label{
+  font-size: 20px;
+  position: absolute;
+  top: -7px;
+  left: 50px;
+  font-weight: 500;
+}
+.form-outer .page .field input{
+  height: 35px;
+  width: 70%;
+  border:1px solid lightgray;
+  border-radius: 5px;
+  font-size:20px ;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.form-outer .page .field #radio{
+  height: 16px;
+  width: 16px;
+}
+.form-outer  button{
+  padding: 15px 30px;
+  border: none;
+  border-radius: 3px;
+  background-color: #1F5D6B;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.form-outer  button:hover{
+  background-color: #000;
+}
+.form-outer .page .field-btns .prev-4.dis{
+  opacity: 0.7;
+}
+.form-outer .page .field-btns .prev-4.dis:hover{
+  background-color:#1F5D6B ;
+}
+.container .progress{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+}
+.container .progress .step{
+  position: relative;
+  width: 100%;
+}
+.container .progress .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.container .progress .step .check{
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  top: 49%;
+  font-size: 25px;
+  color: #1F5D6B;
+  display: none;
+}
+.container .progress .step .check.active{
+  display: block;
+}
+.container .progress .step .bullet.active span{
+  display: none;
+}
+.container .progress .step .bullet{
+  width: 23px;
+  height: 23px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 25px;
+  position: relative;
+}
+.container .progress .step .bullet.active{
+  border-color: #1F5D6B;
+}
+.container .progress .step:not(:last-child) .bullet::after,
+.container .progress .step:not(:last-child) .bullet::before{
+  position: absolute;
+  content: ' ';
+  height: 3px;
+  width: 50px;
+  background-color: #000;
+  bottom: 10px;
+  right: -51px;
+}
+.container  .progress .step:not(:last-child) .bullet.active::after{
+  background-color: #1F5D6B;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  50%{
+    transform: scaleX(0.5);
+  }
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .container{
+    width: 260px;
+    padding: 40px 15px 20px;
+  }
+  .container h1{
+    margin-bottom: 20px;
+    font-size: 27px;
+  }
+  .container .progress{
+    margin: 20px;
+  }
+  .container .progress .step p{
+    font-size: 16px;
+  }
+  .container .progress .step .bullet{
+    font-weight: 400;
+  }
+  .container .progress .step:not(:last-child) .bullet::after,
+  .container .progress .step:not(:last-child) .bullet::before {
+    position: absolute;
+    content: ' ';
+    height: 2px;
+    width: 31px;
+    background-color: #000;
+    bottom: 10px;
+    right: -32px;
+  }
+  .form-outer .page .title h1 {
+    font-size: 24px;
+  }
+  .form-outer .page .field .label {
+    position: absolute;
+    left: 37px;
+    font-weight: 400;
+  }
+  .form-outer button {
+    padding: 10px 20px;
+  }
+  .container .progress .step .check{
+    position: absolute;
+    top: 45%;
+  }
+}
+/****valid form *****/
+.field .error{
+  position: absolute;
+  left: 39px;
+    display: flex;
+    justify-content: flex-start;
+    color: #9b2219;
+    font-size: 15px;
+    display: none;
+}
+.invalid .error{
+    display: flex;
+}
+.invalid  input{
+    border:1px solid #9b2219;
+}
+.field .icon-error{
+    margin-right: 4px;
+}
+
+/***************************this is created by sabreen ahmed*******************/
+
+
+
+
